@@ -1,0 +1,38 @@
+<!-- =========================
+FAQ section
+===========================-->
+<section class="pb-[100px] xl:pt-[180px] md:pt-42 sm:pt-36 pt-32">
+  <div class="main-container">
+    <!-- HEADING  -->
+    <div class="text-center space-y-5">
+      <span data-ns-animate data-delay="0.2" class="badge badge-cyan">FAQ</span>
+      <div class="space-y-3 text-center">
+        <h2 data-ns-animate data-delay="0.3">Questions about how Asmbly Labs works</h2>
+        <p data-ns-animate data-delay="0.4" class="max-w-[600px] mx-auto">
+          Clear answers about our distributed manufacturing platform. Find out how sellers, makers, and designers work together to fulfill orders locally.
+        </p>
+      </div>
+    </div>
+
+    <!-- tab group  -->
+    <Component src="./faq-tab.htm" />
+
+    <!-- general tab  -->
+    <Component src="./general-faq.htm" class="tab-content" id="general-panel" data-display="block" />
+
+    <!-- changelog tab  -->
+    <Component src="./change-log-faq.htm" class="tab-content" id="changelog-panel" data-display="none" />
+
+    <!-- privacy tab  -->
+    <Component src="./privacy.htm" class="tab-content" id="privacy-panel" data-display="none" />
+
+    <!-- terms & condition tab  -->
+    <Component src="./terms-condition-faq.htm" class="tab-content" id="terms-panel" data-display="none" />
+
+    <!-- contact section - single instance -->
+    <div class="mt-24">
+      <Component src="./contact.htm" />
+    </div>
+
+  </div>
+</section>
