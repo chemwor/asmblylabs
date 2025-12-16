@@ -5,7 +5,7 @@ Optimized main.js with lazy loading and conditional imports
 // Core utilities that are needed immediately
 import './js/common/common';
 import './js/utils/theme-switcher';
-
+import './js/utils/logo-switcher'; // Add logo switcher for proper theme switching
 // Lazy load heavy libraries only when needed
 const lazyLoadModule = async (modulePath) => {
   try {
