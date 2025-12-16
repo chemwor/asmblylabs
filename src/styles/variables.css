@@ -4,67 +4,87 @@ All the varaiables are added here
 @theme {
   /* =============== FONTS =============== */
   --font-inter-tight: 'Inter Tight', sans-serif;
-  /* =============== COLORS =============== */
-  --color-primary-50: #f4f2fe;
-  --color-primary-100: #ece8ff;
-  --color-primary-200: #dcd4ff;
-  --color-primary-300: #c3b1ff;
-  --color-primary-400: #a585ff;
-  --color-primary-500: #864ffe;
-  --color-primary-600: #7c31f6;
-  --color-primary-700: #6d1fe2;
-  --color-primary-800: #5a19be;
-  --color-secondary: #1a1a1c;
-  --color-accent: #fcfcfc;
-  --color-split-text: #1a1a1c;
-  --color-background-1: #fcfcfd;
-  --color-background-2: #f9fafb;
-  --color-background-3: #f4f5f8;
-  --color-background-4: #f0f2f6;
-  --color-background-5: #13171e;
-  --color-background-6: #0f1217;
-  --color-background-7: #181d26;
-  --color-background-8: #070b10;
-  --color-background-9: #1f252f;
-  --color-background-10: #ebebeb;
-  --color-background-11: #b5b5b9;
-  --color-background-12: #eaeceb;
-  --color-stroke-1: #dfe4eb;
-  --color-stroke-2: #e3e7ed;
-  --color-stroke-3: #d7dde5;
-  --color-stroke-4: #eceff4;
-  --color-stroke-5: #1b232f;
-  --color-stroke-6: #202731;
-  --color-stroke-7: #2a333e;
-  --color-stroke-8: #303b49;
-  --color-stroke-9: var(--color-background-8);
-  --color-ns-yellow: #f9eb57;
-  --color-ns-green: #c6f56f;
-  --color-ns-red: #ffb9a2;
-  --color-ns-cyan: #83e7ee;
-  --color-ns-green-light: #e8fbc6;
-  --color-ns-cyan-light: #cdf5f8;
-  --color-ns-yellow-light: #fdf7bc;
 
-  --color-gradient-1: linear-gradient(135deg, #a585ff 0%, #ffc2ad 100%);
-  --color-gradient-2: linear-gradient(135deg, #f9eb57 0%, #f99988 100%);
-  --color-gradient-3: linear-gradient(135deg, #83e7ee 0%, #f9eb57 100%);
-  --color-gradient-4: linear-gradient(135deg, #864ffe 0%, #23eed6 100%);
+  /* =============== ASMBLY LABS BRAND COLORS =============== */
+  /* Brand Color Tokens */
+  --color-faded-orange: #F89254;          /* Accent / CTA */
+  --color-asparagus: #8DA249;             /* Success / Support Accent */
+  --color-navajo-white: #FCE1B6;          /* Neutral Light */
+  --color-limed-spruce: #2E434F;          /* Primary Dark */
+  --color-limed-spruce-dark: #2F4250;     /* Error */
+  --color-regent-blue: #8FB7C6;           /* Secondary / Muted Text */
+
+  /* =============== LIGHT MODE COLORS =============== */
+  /* Primary Colors - Updated to brand colors */
+  --color-primary-50: #fdf5ee;            /* Lightest orange tint */
+  --color-primary-100: #fcebdc;           /* Light orange tint */
+  --color-primary-200: #f9d7c4;           /* Lighter orange */
+  --color-primary-300: #f6c3ab;           /* Light orange */
+  --color-primary-400: #f2af93;           /* Medium orange */
+  --color-primary-500: #F89254;           /* Faded Orange - Main CTA */
+  --color-primary-600: #e67e42;           /* Darker orange */
+  --color-primary-700: #d46a30;           /* Dark orange */
+  --color-primary-800: #c2561e;           /* Darker orange */
+
+  /* Secondary & Text Colors */
+  --color-secondary: #2E434F;             /* Limed Spruce - Primary text */
+  --color-accent: #F89254;                /* Faded Orange - Accent */
+  --color-split-text: #2E434F;            /* Limed Spruce - Primary text */
+
+  /* Background Colors - Light Mode */
+  --color-background-1: #FCE1B6;          /* Navajo White - Primary background */
+  --color-background-2: #fbdca8;          /* Slightly darker Navajo White */
+  --color-background-3: #f9d79a;          /* Card backgrounds */
+  --color-background-4: #f7d28c;          /* Panel backgrounds */
+  --color-background-5: #2E434F;          /* Limed Spruce - Dark sections */
+  --color-background-6: #263540;          /* Darker Limed Spruce */
+  --color-background-7: #1e2831;          /* Darkest sections */
+  --color-background-8: #161b22;          /* Deepest dark */
+  --color-background-9: #354249;          /* Medium dark */
+  --color-background-10: #f5d68e;         /* Light variant */
+  --color-background-11: #8FB7C6;         /* Regent Blue */
+  --color-background-12: #f8dc9e;         /* Light background variant */
+
+  /* Stroke/Border Colors */
+  --color-stroke-1: #e6c088;             /* Light borders */
+  --color-stroke-2: #e1bb7a;             /* Medium borders */
+  --color-stroke-3: #dcb66c;             /* Darker borders */
+  --color-stroke-4: #f1d294;             /* Light stroke */
+  --color-stroke-5: #3a4e5c;             /* Dark borders */
+  --color-stroke-6: #445561;             /* Medium dark borders */
+  --color-stroke-7: #4e5c66;             /* Darker borders */
+  --color-stroke-8: #58636b;             /* Darkest borders */
+  --color-stroke-9: #161b22;             /* Deepest dark stroke */
+
+  /* Functional State Colors */
+  --color-ns-yellow: #F89254;            /* Warning - Faded Orange */
+  --color-ns-green: #8DA249;             /* Success - Asparagus */
+  --color-ns-red: #2F4250;               /* Error - Limed Spruce Dark */
+  --color-ns-cyan: #8FB7C6;              /* Info - Regent Blue */
+  --color-ns-green-light: #c4d194;       /* Light success */
+  --color-ns-cyan-light: #b8d1d9;        /* Light info */
+  --color-ns-yellow-light: #fbb885;      /* Light warning */
+
+  /* Updated Gradients with Brand Colors */
+  --color-gradient-1: linear-gradient(135deg, #F89254 0%, #8DA249 100%);
+  --color-gradient-2: linear-gradient(135deg, #F89254 0%, #2E434F 100%);
+  --color-gradient-3: linear-gradient(135deg, #8FB7C6 0%, #8DA249 100%);
+  --color-gradient-4: linear-gradient(135deg, #F89254 0%, #8FB7C6 100%);
   --color-gradient-5: linear-gradient(
     165deg,
-    rgba(255, 255, 255, 0.5) 0.51%,
-    rgba(255, 255, 255, 0) 64.43%
+    rgba(252, 225, 182, 0.5) 0.51%,
+    rgba(252, 225, 182, 0) 64.43%
   );
-  --color-gradient-6: linear-gradient(#83e7ee 0%, #c6f56f 100%);
-  --color-gradient-7: linear-gradient(#ffffff 0%, #83e7ee 100%);
-  --color-gradient-8: linear-gradient(156deg, #ffffff 32.92%, #a585ff 91%);
-  --color-gradient-9: linear-gradient(156deg, #dfb0ff 32.92%, #fdbedc 91%);
-  --color-gradient-10: linear-gradient(135deg, #83e7ee 0%, #c6f56f 100%);
-  --color-gradient-11: linear-gradient(179deg, rgba(255, 255, 255, 0) 0.68%, #fff 79.47%);
+  --color-gradient-6: linear-gradient(#8FB7C6 0%, #8DA249 100%);
+  --color-gradient-7: linear-gradient(#FCE1B6 0%, #8FB7C6 100%);
+  --color-gradient-8: linear-gradient(156deg, #FCE1B6 32.92%, #F89254 91%);
+  --color-gradient-9: linear-gradient(156deg, #fbb885 32.92%, #f5a66f 91%);
+  --color-gradient-10: linear-gradient(135deg, #8FB7C6 0%, #8DA249 100%);
+  --color-gradient-11: linear-gradient(179deg, rgba(252, 225, 182, 0) 0.68%, #FCE1B6 79.47%);
   --color-gradient-12: radial-gradient(
     73.01% 80.77% at 19.23% 47.79%,
-    #83e7ee 0%,
-    rgba(134, 79, 254, 0) 100%
+    #8FB7C6 0%,
+    rgba(248, 146, 84, 0) 100%
   );
 
   /* =============== TYPOGRAPHY =============== */
@@ -97,26 +117,58 @@ All the varaiables are added here
   --breakpoint-lp: 1440px;
 
   /* ==========Shadows========== */
-  --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  --shadow-2: 0px 10px 20px -5px rgba(28, 34, 43, 0.05), 0px 20px 65px -5px rgba(28, 34, 43, 0.05);
-  --shadow-3: 0px 25px 80px -12px rgba(28, 34, 43, 0.1);
-  --shadow-4: 0px 10px 20px -5px rgba(28, 34, 43, 0.05), 0px 20px 65px -5px rgba(28, 34, 43, 0.05);
-  --shadow-5: 0px 25px 80px -12px rgba(28, 34, 43, 0.1);
-  --shadow-6: 0px 44px 64px 0px rgba(29, 32, 35, 0.16);
-  --shadow-7: 0px 4px 6px -1px rgba(28, 34, 43, 0.1), 0px 2px 4px -1px rgba(28, 34, 43, 0.05);
-  --shadow-8: 0px 12.5px 40px -6px rgba(28, 34, 43, 0.1);
-  --shadow-9: 0px 1px 2px 0px rgba(28, 34, 43, 0.05);
-  --shadow-10: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  --shadow-11: 0px 12px 20px rgba(185, 166, 241, 0.16);
-  --shadow-12: 0px 1px 2px 0px rgba(16, 24, 40, 0.26);
+  --shadow-1: 0px 1px 2px 0px rgba(46, 67, 79, 0.05);
+  --shadow-2: 0px 10px 20px -5px rgba(46, 67, 79, 0.05), 0px 20px 65px -5px rgba(46, 67, 79, 0.05);
+  --shadow-3: 0px 25px 80px -12px rgba(46, 67, 79, 0.1);
+  --shadow-4: 0px 10px 20px -5px rgba(46, 67, 79, 0.05), 0px 20px 65px -5px rgba(46, 67, 79, 0.05);
+  --shadow-5: 0px 25px 80px -12px rgba(46, 67, 79, 0.1);
+  --shadow-6: 0px 44px 64px 0px rgba(46, 67, 79, 0.16);
+  --shadow-7: 0px 4px 6px -1px rgba(46, 67, 79, 0.1), 0px 2px 4px -1px rgba(46, 67, 79, 0.05);
+  --shadow-8: 0px 12.5px 40px -6px rgba(46, 67, 79, 0.1);
+  --shadow-9: 0px 1px 2px 0px rgba(46, 67, 79, 0.05);
+  --shadow-10: 0px 4px 4px 0px rgba(46, 67, 79, 0.25);
+  --shadow-11: 0px 12px 20px rgba(248, 146, 84, 0.16);
+  --shadow-12: 0px 1px 2px 0px rgba(46, 67, 79, 0.26);
   --shadow-13:
-    0 7.818px 15.637px -3.909px rgba(28, 34, 43, 0.05),
-    0 15.637px 50.819px -3.909px rgba(28, 34, 43, 0.05);
-  --shadow-14: 0 1px 2px 0 rgba(16, 24, 40, 0.06);
-  --shadow-15: 40px 28px 80px 0 rgba(0, 0, 0, 0.08);
+    0 7.818px 15.637px -3.909px rgba(46, 67, 79, 0.05),
+    0 15.637px 50.819px -3.909px rgba(46, 67, 79, 0.05);
+  --shadow-14: 0 1px 2px 0 rgba(46, 67, 79, 0.06);
+  --shadow-15: 40px 28px 80px 0 rgba(46, 67, 79, 0.08);
   --stack-cards-gap: 2rem;
 }
 
+/* =============== DARK MODE OVERRIDES =============== */
 .dark {
-  --color-split-text: #fcfcfc;
+  /* Dark Mode - Primary backgrounds become Limed Spruce */
+  --color-background-1: #2E434F;          /* Limed Spruce - Primary dark background */
+  --color-background-2: #354249;          /* Slightly lighter Limed Spruce */
+  --color-background-3: #3c474e;          /* Card backgrounds in dark */
+  --color-background-4: #434c53;          /* Panel backgrounds in dark */
+
+  /* Dark Mode - Text colors inverted */
+  --color-split-text: #FCE1B6;            /* Navajo White - Primary text in dark */
+  --color-secondary: #FCE1B6;             /* Navajo White - Primary text in dark */
+
+  /* Dark Mode - Muted text uses Regent Blue */
+  --color-background-11: #8FB7C6;         /* Regent Blue for secondary text */
+
+  /* Dark Mode - Light backgrounds for contrast */
+  --color-background-10: #3a454c;         /* Dark variant */
+  --color-background-12: #364148;         /* Dark background variant */
+
+  /* Dark Mode - Adjusted strokes */
+  --color-stroke-1: #4a5962;             /* Dark borders */
+  --color-stroke-2: #526068;             /* Medium dark borders */
+  --color-stroke-3: #5a676e;             /* Darker borders in dark mode */
+  --color-stroke-4: #445258;             /* Light stroke in dark */
+
+  /* Dark Mode - Gradient adjustments */
+  --color-gradient-5: linear-gradient(
+    165deg,
+    rgba(46, 67, 79, 0.5) 0.51%,
+    rgba(46, 67, 79, 0) 64.43%
+  );
+  --color-gradient-7: linear-gradient(#2E434F 0%, #8FB7C6 100%);
+  --color-gradient-8: linear-gradient(156deg, #2E434F 32.92%, #F89254 91%);
+  --color-gradient-11: linear-gradient(179deg, rgba(46, 67, 79, 0) 0.68%, #2E434F 79.47%);
 }

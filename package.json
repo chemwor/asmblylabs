@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build && node post-build.js",
+    "build:optimized": "node optimize-performance.js && vite build && node post-build.js",
     "build:clean": "vite build && node post-build.js",
     "preview": "vite preview --host 0.0.0.0",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "analyze": "vite build --mode analyze",
+    "performance-audit": "node optimize-performance.js"
   },
   "devDependencies": {
     "prettier": "^3.6.2",

@@ -121,16 +121,69 @@ export default defineConfig({
     rollupOptions: {
       input: getHtmlEntries(),
       output: {
-        entryFileNames: 'assets/main.js',
-        assetFileNames: (assetInfo) => {
-          return `assets/${assetInfo.name || '[name].[ext]'}`;
+        // Code splitting configuration
+        manualChunks: {
+          // Split heavy libraries into separate chunks
+          'vendor-animations': [
+            './src/js/animation/swiper.js',
+            './src/js/animation/slider.js',
+            './src/js/animation/modal.js'
+          ],
+          'vendor-utils': [
+            './src/js/utils/leaflet.js',
+            './src/js/common/parallax-effect.js'
+          ],
+          // Core functionality
+          'core': [
+            './src/js/common/common.js',
+            './src/js/common/mobile-menu.js',
+            './src/js/common/navigation-menu.js'
+          ]
         },
-      },
+        // Optimize chunk file names
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+            return `assets/images/[name]-[hash][extname]`;
+          }
+          if (ext === 'css') {
+            return `assets/css/[name]-[hash][extname]`;
+          }
+          return `assets/[name]-[hash][extname]`;
+        }
+      }
     },
-    minify: false,
-    modulePreload: false,
-    cssMinify: false,
-    assetsDir: 'assets',
+    // Enable minification and tree shaking
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: false,
+        drop_debugger: true,
+        pure_funcs: ['console.log'],
+        passes: 2
+      },
+      mangle: {
+        safari10: true
+      }
+    },
+    // Optimize chunk size warnings
+    chunkSizeWarningLimit: 1000,
+    // Enable CSS code splitting
+    cssCodeSplit: true
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: [
+      // Pre-bundle commonly used modules
+    ],
+    exclude: [
+      // Exclude heavy modules from pre-bundling
+      './src/js/utils/leaflet.js',
+      './src/js/animation/swiper.js'
+    ]
   },
   server: {
     open: true,
