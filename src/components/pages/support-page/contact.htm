@@ -10,8 +10,7 @@ Support section
           <div class="space-y-3">
             <h2 data-ns-animate data-delay="0.2">Create a support ticket</h2>
             <p data-ns-animate data-delay="0.3" class="max-w-[550px]">
-              Have a question, feedback, or feature request? We’d love to hear from you! Please fill
-              out the form below, and our support team will get back to you as soon as possible.
+              Need help with design uploads, print quality issues, or marketplace navigation? Our 3D printing experts are here to assist you. Fill out the form below and our support team will provide personalized solutions for your manufacturing needs.
             </p>
           </div>
         </div>
@@ -20,7 +19,7 @@ Support section
           data-delay="0.4"
           class="lg:max-w-[595px] w-full overflow-hidden rounded-[20px]"
         >
-          <img src="./images/ns-img-402.jpg" class="size-full object-cover" alt="support-contact" />
+          <img src="./images/support2.png" class="size-full object-cover" alt="Asmbly Labs support team helping with 3D printing solutions" />
         </figure>
       </div>
       <div class="col-span-12 lg:col-span-6">
@@ -59,17 +58,37 @@ Support section
               class="w-full block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-full h-12 focus:outline-none focus:ring-0 focus:ring-offset-0 placeholder:text-tagline-1 placeholder:font-normal font-normal dark:text-accent placeholder:text-secondary/60 dark:placeholder:text-accent/60 shadow-1"
             />
           </fieldset>
+          <fieldset class="space-y-2 mb-8">
+            <label
+              for="user-type"
+              class="text-tagline-1 text-secondary dark:text-accent font-medium block"
+            >
+              I am a...
+            </label>
+            <select
+              name="user-type"
+              id="user-type"
+              class="w-full block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-full h-12 focus:outline-none focus:ring-0 focus:ring-offset-0 text-tagline-1 font-normal text-secondary/80 dark:text-accent/80 shadow-1"
+            >
+              <option value="">Select your role</option>
+              <option value="designer">Designer/Creator</option>
+              <option value="manufacturer">Manufacturer/Service Provider</option>
+              <option value="seller">Seller/Ecommerce Store Owner</option>
+              <option value="customer">Customer/Buyer</option>
+              <option value="other">Other</option>
+            </select>
+          </fieldset>
           <fieldset class="space-y-2">
             <label
               for="comment"
               class="text-tagline-1 text-secondary dark:text-accent font-medium block"
             >
-              Comment
+              Describe your issue or question
             </label>
             <textarea
               name="comment"
               id="comment"
-              placeholder="Enter your comment"
+              placeholder="Please provide details about your design files, print specifications, order issues, or any technical questions..."
               class="w-full min-h-[115px] block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-xl focus:outline-none focus:ring-0 focus:ring-offset-0 placeholder:text-tagline-1 placeholder:font-normal font-normal placeholder:text-secondary/60 dark:placeholder:text-accent/60 dark:text-accent shadow-1"
             ></textarea>
           </fieldset>
@@ -93,7 +112,7 @@ Support section
             type="submit"
             class="btn btn-md btn-secondary hover:btn-primary dark:btn-accent w-full before:content-none first-letter:uppercase"
           >
-            Submit
+            Submit support request
           </button>
         </form>
       </div>
