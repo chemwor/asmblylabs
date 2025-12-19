@@ -86,3 +86,23 @@ Site Badges Styles
 @utility badge-secondary {
   @apply bg-secondary text-white dark:bg-accent dark:text-secondary font-medium;
 }
+
+@utility badge-purple {
+  @apply bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300;
+}
+
+@utility badge-orange {
+  @apply bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300;
+}
+
+@utility badge-pink {
+  @apply bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300;
+}
+
+@utility badge-blue {
+  @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300;
+}
+
+@utility badge-red {
+  @apply bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300;
+}
